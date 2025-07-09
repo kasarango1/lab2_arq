@@ -39,6 +39,14 @@ app.get('/', (req, res) => {
 });
 
 // Arrancar servidor HTTP en el puerto 80
-app.listen(3000, () => {
-  console.log('🚀 Servidor corriendo en http://localhost:3000');
+app.listen(80, () => {
+  console.log('🚀 Servidor corriendo en http://40.90.234.134:80');
+  console.log('📚 API de Biblioteca Digital v2.0.0');
+  console.log('✅ Base de datos conectada');
+  console.log('🔗 Endpoints disponibles:');
+  console.log('   - GET  /api/libros');
+  console.log('   - POST /auth/login');
+  console.log('   - POST /auth/register');
+  console.log('   - POST /api/libros/agregar (requiere auth)');
+  console.log('   - DELETE /api/libros/eliminar/:id (requiere auth)');
 });
